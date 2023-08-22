@@ -14,16 +14,16 @@ Intall flask in a virtual environment to enable of it's dependencies to be withi
 Run pharmakart app with the following:
 
 
-STEP-1
-             FLASK_APP=pharmakart.py
-             FLASK_DEBUG=1
-flask run
+#   STEP-1
+    FLASK_APP=pharmakart.py
+    FLASK_DEBUG=1
+    flask run
 
 OR
 
 
-STEP-2
-            python3 pharmakart.py
+#   STEP-2
+    python3 pharmakart.py
 
 
 
