@@ -812,6 +812,70 @@ section {
     transform: rotate(360deg);
   }
 }
+/* -------------------------------------------------------------
+# Registration Form
+----------------------------------------------------------------*/
+body {
+  background-color: gray;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 40%;
+  margin: auto;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.reg {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 3px;
+}
+.names {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+.ln .fn{
+  display: flex;
+  flex-direction: column;
+}
+
+#lst, #fst, #email, #psw{
+  padding: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.email, .psw{
+  display: inline-block;
+  margin-bottom: 2px;
+
+}
+input[type="email"], input[type="password"], input[type="text"]{
+  width: 100%;
+  display: inline-block;
+  border: none;
+  background-color: azure;
+}
+
+.button {
+  background-color: teal;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  opacity: 0.8;
+}
+.button:hover {
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Footer

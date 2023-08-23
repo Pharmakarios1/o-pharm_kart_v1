@@ -11,7 +11,7 @@ Intall flask in a virtual environment to enable of it's dependencies to be withi
         sudo apt-get update
         pip install flask
 
-Run pharmakart app with the following:
+Run pharmakart app with the following on the command line:
 
 
 #   STEP-1
