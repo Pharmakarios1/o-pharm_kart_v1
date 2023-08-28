@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 20vh;
+    background-color:#006838 ;
+}
+.nav-bar{
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: azure;
+}
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #006838;
+    min-width: 100px;
+    z-index: 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  Styling for dropdown arrow
+  .dropdown a::after {
+    content: "";
+    background-color: #006838;
+  }
+  
+  .dropdown:hover a::after {
+    content: "";
+    background-color: #006838;
+  } */
+
+  .logo{
+    margin-left: 50px;
+    color:  #96CF24;
+    font-size: 30px;
+  }
+.nav-bar li a:hover{
+    color: #96CF24;
+
+}
+  
+.container {
+    width: 100%;
+    height: 95vh;
+    background-image: url(../img/hero-pharm.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+  
+.container{
+    position: relative;
+  }
+  
+.container h1 {
+    margin: 0 15px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #006838;
+    font-family: "Poppins", sans-serif;
+  }
+.container h1 span {
+    color: #96CF24;
+  }
+.container p {
+    color: #006838;
+    margin: 0 20px;
+    font-size: 25px;
+}
+
+/* About page */
+.about-container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.about-image {
+  width: 20px;
+  height: 20px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+h2 {
+  margin-top: 0;
+  color: #006838;
+  align-items: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+.about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #006838;
+    padding: 20px;
+    margin: 20px;
+    display:inline-block;
+    flex-direction:row;
+    align-items: center;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin: 0;
+    color: #006838;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #006838;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    justify-content: center;
+  }
+  
+  .button:hover {
+    background-color: #96CF24;
+  }
+  
+
+
+
+.footer {
+  background: #cecccc;
+  padding: 0 0 30px 0;
+  color: #006838;
+  font-size: 14px;
+}
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 15px;
+    margin: 10px;
+    color: #006838;
+  }
+
+.footer .copyright {
+  text-align: center;
+}

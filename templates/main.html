@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmakat-</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="url_for('static', filename='css/style.css')">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
             <p class="logo">Pharmakat</p>
             <ul>
                 <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about.html">About</a></li>
                 <li><a href="/contact">Contact</a></li>
                 <li class="dropdown"><a href="consult">Consult</a>
                     <!-- <ul class="dropdown-content">
@@ -29,11 +30,37 @@
 
         </div>
     </header>
-    {%block content%}
+    <section class="container">
+           <h1>Welcome to <span>Pharmakat</span></h1>
+           <p>Your one stop store to health services</p>
+           <div class="order">
 
 
-    {%endblock%}
-   
+           </div>
+    </section>
+    <section class="about">
+          <div class="card">
+            <div class="card-content">
+              <h3>Refill Medication's</h3>
+              <p>Refill Medications on the go for your continuing therapy.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Pharmacist's Consult</h3>
+              <p>Got a question for the Pharmacist regarding your health </p>
+              <a href="/about" class="button">Read More</a>
+               
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h3>Way-bill Services</h3>
+              <p>Ofcourse, everyone loves a hassle free shopping.</p>
+            </div>
+          </div>
+          
+    </section>
 
     <footer class="footer">
         <div class="social-icons">
