@@ -1,0 +1,10 @@
+.navbar-custom {
+    background-color: lightgray;
+}
+
+.background {
+    height: 90vh;
+    background-image: url(../img/hero-pharm.jpg);
+    background-size: cover;
+    background-position: center;
+}

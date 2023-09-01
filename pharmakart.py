@@ -5,12 +5,12 @@ from forms import LoginForm, RegistrationForm
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-app.config['SECRET_KEY'] = '6a4f913553a1d230f711c743653ee4fc'
+app.config['SECRET_KEY'] = 'd24cea3cd7757ef7e80ca62e1c1a385e'
 
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("home.html", dt = datetime.datetime.utcnow())
+    return render_template("home.html")
 
 
 @app.route("/about/")
@@ -49,5 +49,4 @@ def login():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
+    
