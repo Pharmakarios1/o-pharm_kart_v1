@@ -10,15 +10,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-success">
+        <nav class="navbar bg">
             <div class="container-fluid">
-                <a class="navbar-brand">Pharmakart</a>
-                <ul class="nav justify-content-end">
+                <a class="navbar-brand">Pkart-Rx</a>
+                <ul class="nav nav-menu justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Consult</a>
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
@@ -29,26 +29,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('register') }}">Register</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
-                    </li>
                 </ul>
             </div>           
         </nav>
     </header>
-    <main class="background">
-        <div class="container py-4 px-4">
-            <h1>Welcome to <span>Pharmakat</span></h1>
-                <p>Your one stop store to health services</p>
+    
+    
+           
             {% block content %}{% endblock %}
-        </div>
-    </main>    
+    
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fixed-bottom navbar-custom">
             <div class="col-md-4 d-flex align-items-center">
               <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
               </a>
-              <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Copyright: Pharmakart, Inc</span>
+              <span class="mb-3 mb-md-0 text-body-secondary">&copy; Pharmakart, Inc | 2023</span>
             </div>
         
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
