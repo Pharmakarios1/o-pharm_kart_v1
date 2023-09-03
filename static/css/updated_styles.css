@@ -16,7 +16,7 @@
     text-align: center;
     padding: 7px;
     border-radius: 25%;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+    background-image:linear-gradient(to right,#0b8200, #96cf24);
 
 }
 .navbar-brand:hover{
@@ -68,6 +68,50 @@ ul li a{
     background-position: center;
 }
 
+/* Homepage */
+
+.container h1{
+    color: #006838;
+    font-weight: bolder;
+}
+.container span{
+    color: #fff;
+    background-image:linear-gradient(to right,#0b8200, #96cf24);
+    border-radius: 5px;
+}
+.container p{
+    font-family: monospace;
+    color: #0b8200;
+    font-size: 20px;
+    text-align: flex-start;
+}
+
+.order-menu h2{
+    color: #006838;
+    font-weight: 700;
+    text-align:center;
+    text-shadow: #96cf24;
+    
+}
+.form-select {
+    background-color: #96CF24;
+    color: #0b8200;
+    font-weight: 400;
+}
+.form-select:hover{
+    color: #0b8200;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0b8200;
+    margin-top: 80px;
+    padding: 5px;
+}
+.btn:hover{
+    background-color:#96CF24;
+    border-color: #0b8200;
+}
 /* About page */
 #banner{
     padding: 10px;

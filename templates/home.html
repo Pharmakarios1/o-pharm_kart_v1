@@ -2,12 +2,15 @@
 {% block content %}
 
 <main class="background">
-  <div class="container py-4 px-4">
-  <h1>Welcome to <span>Pharmakat</span></h1>
-  <p>Your one stop store to health services</p>
+  <div class="row container py-4 px-4">
+    <div class="col-md-6">
+      <h1>Welcome to <span>Pharmakart</span></h1>
+      <p>Your one stop store to health services</p>
+    </div>
+ 
 </div>
 <div class="row container py-4 px-4">
-  <div class="col-md-6 order-menu">
+  <div class="col-md-4 order-menu">
     <h2>ORDER MENU</h2>
     <select class="form-select" aria-label="Default select example">
       <option selected>Select Services</option>
@@ -15,9 +18,16 @@
       <option value="2">Refill Medications</option>
       <option value="3">Way-bill Services</option>
     </select>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button">SUBMIT</button>
+    </div>
   </div>
 
 </div>
+</main> 
+<section class="add">
+  
 
 <div class="card-group mb-4 g-4">
   <div class="card" style="width: 18rem;">
@@ -42,5 +52,6 @@
   </div>
 </div>
 
-</main>    
+
+</section>   
 {% endblock content %}
