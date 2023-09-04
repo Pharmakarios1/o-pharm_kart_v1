@@ -112,6 +112,32 @@ ul li a{
     background-color:#96CF24;
     border-color: #0b8200;
 }
+
+.display-items{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #96CF24;
+    padding: auto;
+}
+.display-items h3{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.display-items p{
+    margin-left: 30px;
+    font-size: 15px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* About page */
 #banner{
     padding: 10px;
