@@ -122,11 +122,19 @@ ul li a{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    margin: 20px;
 }
 .speech {
     width: 600px;
-    padding: 0;
-    margin: 0;
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #96CF24;
+
+
     position: relative;
 }
 .promo-title{
@@ -204,5 +212,27 @@ ul li a{
     margin-bottom: 80px;
     margin-left: 80px;
     border-radius: 10px;
+}
+.map iframe{
+    border-radius: 10px;
     box-shadow: 0 0 10px #96CF24;
+
+}
+
+
+/* Login page  and Register page*/
+.content-section{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+}
+.border-bottom{
+    border-bottom: 1px solid #96CF24;
+    color: #0b8200;
+    font-weight: bolder;
+}
+.form-group{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    justify-content: center;
 }
