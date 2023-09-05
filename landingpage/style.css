@@ -286,3 +286,16 @@ ul li a{
     margin-bottom: 1rem;
     justify-content: center;
 }
+.coll{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.coll h1{
+    color: #006838;
+    font-weight: bolder;
+    text-align: center;
+}
+.coll p{
+    color: #0b8200;
+    font-weight: bolder;
+}

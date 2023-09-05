@@ -145,8 +145,8 @@ ul li a{
 }
 
 .img-fluid{
-    width: 100%;
-    height: 100%;
+    width: 92%;
+    height: 92%;
     border-radius: 10px;
     margin: 20px;
     margin-bottom: 3px;
@@ -171,6 +171,19 @@ ul li a{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.promo-title .fa{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #0b8200;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 2px;
 }
 .about-cards{
     margin-top: 20px;
