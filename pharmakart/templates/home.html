@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<main class="background">
+  <div class="row container py-4 px-4">
+    <div class="col-md-6">
+      <h1>Welcome to <span>Pharmakart</span></h1>
+      <p>Your one stop store to health services</p>
+    </div>
+ 
+</div>
+<div class="row container py-4 px-4">
+  <div class="col-md-4 order-menu">
+    <h2>ORDER MENU</h2>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Select Services</option>
+      <option value="1">Consult A Pharmacist</option>
+      <option value="2">Refill Medications</option>
+      <option value="3">Way-bill Services</option>
+    </select>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" type="button">SUBMIT</button>
+    </div>
+  </div>
+
+</div>
+</main> 
+<section class="display-items">
+  <div class="row">
+    <div class="col-4">
+      <img src="../static/img/vitaminC.jpg" alt="">
+      <h3>Vitamin C</h3>
+      <p>₦ 4,000</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../static/img/vitaminE.jpg" alt="">
+      <h3>Vitamin E</h3>
+      <p>₦ 4,000</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../static/img/megaCal.jpg" alt="">
+      <h3>MegaCalcium</h3>
+      <p>₦ 4,000</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="../static/img/vitaminC.jpg" alt="">
+      <h3>Vitamin C</h3>
+      <p>₦ 4,000</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../static/img/vitaminE.jpg" alt="">
+      <h3>Vitamin E</h3>
+      <p>₦ 4,000</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../static/img/megaCal.jpg" alt="">
+      <h3>MegaCalcium</h3>
+      <p>₦ 4,000</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <img src="../static/img/vitaminC.jpg" alt="">
+      <h3>Vitamin C</h3>
+      <p>₦ 4,000</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../static/img/vitaminE.jpg" alt="">
+      <h3>Vitamin E</h3>
+      <p>₦ 4,000</p>
+    </div>
+    <div class="col-md-4">
+      <img src="../static/img/megaCal.jpg" alt="">
+      <h3>MegaCalcium</h3>
+      <p>₦ 4,000</p>
+    </div>
+  </div>
+
+  
+
+</section>
+<section class="add">
+  
+
+<div class="card-group mb-4 g-4">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Refill Medications</h5>
+      <p class="card-text">Refill Medications on the go for your continuing therapy.</p>
+
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Consult a Pharamcist</h5>
+      <p class="card-text">Got a question for the Pharmacist regarding your health?</p>
+      <a href="{{ url_for('about') }}" class="card-link">Read More</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Way-bill Services</h5>
+      <p class="card-text">Ofcourse, everyone loves a hassle free shopping. Pharmakart got you</p>
+    </div>
+  </div>
+</div>
+
+
+</section>   
+{% endblock content %}
