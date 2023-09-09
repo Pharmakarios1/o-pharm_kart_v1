@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmakat-</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-bar">
+            <!-- <img src="" alt="Pharmakat" class="logo"> -->
+            <p class="logo">Pharmakat</p>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li class="dropdown"><a href="consult">Consult</a>
+                    <!-- <ul class="dropdown-content">
+                        <li>Pharmacist's Consult</li>
+                        <li>Doctor's Consult</li>
+                        <li>Way-bill Services</li>
+                    </ul> -->
+                </li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <main role="main" class="container mt-3">
+        <div class="row">
+            <div class="col-md">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} container">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <div class="container border">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.github.com/pharmakarios1" class="icon">
+                <i class="fab fa-github"></i>
+              </a>
+            <a href="https://www.facebook.com" class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" class="icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.intagram.com" class="icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+          </div>
+        <div class="copyright">
+            <p>copyright: Pharmakat 2023</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,6 @@
+database  : 'mysql'
+username  : 'pharm_user'
+password  : 'Pharmakart!23'
+host      : 'localhost'
+port      : 3306
+db_name   : 'pharmakart_db'
