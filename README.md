@@ -49,7 +49,7 @@ OR
 
 # Perform all operations on the app
 
-![pharmakart](pharmakart.png)
+![pharmakart](pharmakarthome.png)
 
 
 interact with Pharmakart health APP
