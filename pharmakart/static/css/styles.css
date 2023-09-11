@@ -387,9 +387,10 @@ ul li a{
 
 }
 .admin {
-    margin: 15px;
+    margin: 100px 0;
     margin-left: 25px;
-    margin-right: 25px;    
+    margin-right: 25px;
+    border-left: 4px solid var(--text);    
 }
 .admin h3{
     text-align: center;
@@ -407,6 +408,21 @@ ul li a{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.admin img{
+    width:120px;
+    height: 120px;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 3px;
+}
+.admin a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
 
 
 /* Login page  and Register page*/
