@@ -3,7 +3,7 @@
 :root{
     --green:#27ae60;
     --black:#0b8200;
-    --light-color:#666;
+    --light-color:#006838;
     --box-shadow:0 .5rem 1.5rem #006838;
 }
 *{
@@ -22,49 +22,54 @@
     width: 100vw;
     height: 12vh;
     background-color:#006838 ;
+   
     
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
 }
 /* Nav-bar custom */
 .navbar-brand {
-    margin-right: 10px;
-    font-size: 30px;
+    font-size: 40px;
     font-family:Tahoma;
-    font-weight: bold;
-    color: #000;
-    height: 50px;
-    width: 190px;
-    text-align: center;
-    padding: 7px;
-    border-radius: 25%;
-    background-image:linear-gradient(to right,#0b8200, #96cf24);
+    color: #96CF24;
 
 }
-.navbar-brand:hover{
-    color:#0b8200;
+.navbar-brand i{
+    color: #96CF24;
+    margin: 30px;
 }
 .navbar-nav{
     margin-left: 10px;
+}  
+.navbar-toggler{
+    outline: none;
 }
 .bg ul li a{
     margin-left: 10px;
-    color: #fff;
-    font-size: 18px;
+    color: #fff !important;
+    font-size: 22px;
     font-weight: bold;
-    text-align: center;
+    float: right;
+    text-align: left;
     padding: 5px;
     border-radius: 12px;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+  
 
 }
 .bg ul li a:hover{
     color: #006838;
+    background-image: linear-gradient(to right, #96cf24, #0b8200);
 }
 .bg ul li a.active{
     color: #006838;
 }
 ul li a{
     margin-right: 8px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #006838;
     height: 35px;
@@ -72,10 +77,18 @@ ul li a{
     text-align: center;
     padding: 7px;
     border-radius: 15px;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+    
+}
+.fa-bars{
+    color: #96CF24;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none;
 }
 .navbar-nav li a:hover{
     color: #006838;
+    background-image: linear-gradient(to right, #96cf24, #0b8200);
 }
 .navbar-custom {
     background-color: lightgray;
