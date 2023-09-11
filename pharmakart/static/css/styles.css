@@ -3,8 +3,10 @@
 :root{
     --green:#27ae60;
     --black:#0b8200;
-    --light-color:#006838;
+    --greener:#006838;
     --box-shadow:0 .5rem 1.5rem #006838;
+    --text:#96CF24;
+    --footer: #d3d3d3;
 }
 *{
     font-family: 'Nunito', sans-serif;
@@ -14,33 +16,28 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
-
-}
-.bg{
-    width: 100vw;
-    height: 12vh;
-    background-color:#006838 ;
-   
-    
 }
 header{
+    width: 100vw;
+    height: 12vh;
+    background-color:var(--greener) ;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+
 
 }
 /* Nav-bar custom */
 .navbar-brand {
     font-size: 40px;
-    font-family:Tahoma;
-    color: #96CF24;
+    color: var(--text);
+    margin-left: 30px;
 
 }
 .navbar-brand i{
-    color: #96CF24;
-    margin: 30px;
+    color: var(--text);
 }
 .navbar-nav{
     margin-left: 10px;
@@ -56,42 +53,41 @@ header{
     float: right;
     text-align: left;
     padding: 5px;
-    border-radius: 12px;
+    border-radius: 10px;
   
 
 }
 .bg ul li a:hover{
-    color: #006838;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+    color: var(--greener);
+    background-image: linear-gradient(to right, var(--text), var(--greener));
 }
-.bg ul li a.active{
-    color: #006838;
+.bg ul li a::after{
+    color: var(--greener);
 }
 ul li a{
     margin-right: 8px;
     font-size: 18px;
     font-weight: bold;
-    color: #006838;
-    height: 35px;
-    width: 75px;
+    color: var(--greener);
+    height: 40px;
+    width: 80px;
     text-align: center;
     padding: 7px;
     border-radius: 15px;
     
 }
 .fa-bars{
-    color: #96CF24;
-    font-size: 30px !important;
+    color: var(--text)
 }
 .navbar-toggler{
     outline: none;
 }
 .navbar-nav li a:hover{
-    color: #006838;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+    color: var(--text);
+    background-image: linear-gradient(to right, var(--text), var(--greener));
 }
 .navbar-custom {
-    background-color: lightgray;
+    background-color: var(--footer);
 }
 
 .background {
@@ -104,7 +100,7 @@ ul li a{
 /* Homepage */
 
 .container h1{
-    color: #006838;
+    color: var(--greener);
     font-weight: bolder;
 }
 .container span{
@@ -120,15 +116,15 @@ ul li a{
 }
 
 .order-menu h2{
-    color: #006838;
+    color: var(--greener);
     font-weight: 700;
     text-align:center;
-    text-shadow: #96cf24;
+    text-shadow: var(--text);
     
 }
 .form-select {
-    background-color: #96CF24;
-    color: #0b8200;
+    background-color: var(--greener);
+    color: #fff;
     font-weight: 400;
 }
 .form-select:hover{
@@ -253,7 +249,7 @@ ul li a{
     margin: 10px;
     background-color: gainsboro;
     border-radius: 10px;
-    box-shadow: 0 0 10px #96CF24;
+    box-shadow: 0 0 10px var(--text);
 
 }
 .promo-title{
@@ -283,7 +279,7 @@ ul li a{
 }
 .card{
     border-radius: 10px;
-    box-shadow: 0 0 10px #96CF24;
+    box-shadow: 0 0 10px var(--text);
     margin:20px;
     padding: auto;
     width: 550px;
@@ -331,10 +327,26 @@ ul li a{
     margin-top: 20px;
 
 }
-.center h3{
-    margin-top: 30px;
-    color: #006838;
+.row h3{
+    margin-top: 50px;
+    color: var(--greener);
+    text-align: start;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left:80px;
+    margin-top: 20px;
+}
+.MeetUs{
+    background-color:var(--text);
+    font-weight: bolder;
     text-align: center;
+    width: 80vw;
+    height: 50px;
+    border-radius:12px ;
+    padding-top: 10px;
+    
 }
 .center .fa{
     text-align: center;
@@ -349,16 +361,51 @@ ul li a{
     padding: 7px;
     border-radius: 2px;   
 }
+.fa-solid{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 2px;
+    color: red;
+}
 .map{
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 80px;
-    margin-left: 80px;
+    margin-left: 20px;
     border-radius: 10px;
+
 }
 .map iframe{
     border-radius: 10px;
-    box-shadow: 0 0 10px #96CF24;
+    box-shadow: 0 0 10px var(--text);
 
+}
+.admin {
+    margin: 15px;
+    margin-left: 25px;
+    margin-right: 25px;    
+}
+.admin h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.admin p{
+    justify-content: start;
+    text-align:start;
+    font-size: 15px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -369,7 +416,7 @@ ul li a{
     margin-left: 200px;
 }
 .border-bottom{
-    border-bottom: 1px solid #96CF24;
+    border-bottom: 1px solid var(--text);
     color: #0b8200;
     font-weight: bolder;
 }
