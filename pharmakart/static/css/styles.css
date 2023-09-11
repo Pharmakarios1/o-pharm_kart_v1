@@ -1,50 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Open+Sans&family=Raleway:ital,wght@0,100;0,500;0,700;0,800;1,200;1,900&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#0b8200;
+    --light-color:#006838;
+    --box-shadow:0 .5rem 1.5rem #006838;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
 .bg{
     width: 100vw;
     height: 12vh;
     background-color:#006838 ;
+   
     
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
 }
 /* Nav-bar custom */
 .navbar-brand {
-    margin-right: 10px;
-    font-size: 30px;
+    font-size: 40px;
     font-family:Tahoma;
-    font-weight: bold;
-    color: #000;
-    height: 50px;
-    width: 190px;
-    text-align: center;
-    padding: 7px;
-    border-radius: 25%;
-    background-image:linear-gradient(to right,#0b8200, #96cf24);
+    color: #96CF24;
 
 }
-.navbar-brand:hover{
-    color:#0b8200;
+.navbar-brand i{
+    color: #96CF24;
+    margin: 30px;
 }
 .navbar-nav{
     margin-left: 10px;
+}  
+.navbar-toggler{
+    outline: none;
 }
 .bg ul li a{
     margin-left: 10px;
-    color: #fff;
-    font-size: 18px;
+    color: #fff !important;
+    font-size: 22px;
     font-weight: bold;
-    text-align: center;
+    float: right;
+    text-align: left;
     padding: 5px;
     border-radius: 12px;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+  
 
 }
 .bg ul li a:hover{
     color: #006838;
+    background-image: linear-gradient(to right, #96cf24, #0b8200);
 }
 .bg ul li a.active{
     color: #006838;
 }
 ul li a{
     margin-right: 8px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #006838;
     height: 35px;
@@ -52,10 +77,18 @@ ul li a{
     text-align: center;
     padding: 7px;
     border-radius: 15px;
-    background-image: linear-gradient(to right, #96cf24, #0b8200);
+    
+}
+.fa-bars{
+    color: #96CF24;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none;
 }
 .navbar-nav li a:hover{
     color: #006838;
+    background-image: linear-gradient(to right, #96cf24, #0b8200);
 }
 .navbar-custom {
     background-color: lightgray;
@@ -112,70 +145,129 @@ ul li a{
     background-color:#96CF24;
     border-color: #0b8200;
 }
+.meds .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
 
-.display-items{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #96CF24;
-    padding: auto;
 }
-.display-items h3{
-    margin-left: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.meds .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
-.display-items p{
-    margin-left: 30px;
-    font-size: 15px;
-    color: #000;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+.meds .box-container .box .fa-heart,
+.meds .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+
 }
+.meds .box-container .box .fa-heart:hover,
+.meds .box-container .box .fa-eye:hover{
+    background: var(--green);
+    color: #fff;
+
+
+}
+
+.meds .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+.meds .box-container .box .fa-eye{
+    left: -15rem;
+}
+
+
+.meds .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+}
+
+.meds .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+
+.meds .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+
+.meds .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+
+}
+
+
+.meds .box-container .box .stars{
+    padding: 1rem 0;
+    
+}
+
+.meds .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+
+    
+}
+
+.meds .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
 
 /* About page */
 #banner{
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
 }
 
 .img-fluid{
-    width: 92%;
-    height: 92%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
     margin-bottom: 3px;
 }
 .speech {
-    width: 600px;
+    width: 750px;
     padding: 15px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
     background-color: gainsboro;
     border-radius: 10px;
     box-shadow: 0 0 10px #96CF24;
 
-
-    position: relative;
 }
 .promo-title{
     font-size: 30px;
     font-weight: bold;
     color: #000;
-    text-align: center;
+    text-align: start;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .promo-title .fa{
-    text-align: center;
+    text-align: start;
     margin-left: 60px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 20px;
     font-size: 30px;
     color: #0b8200;
@@ -186,14 +278,15 @@ ul li a{
     border-radius: 2px;
 }
 .about-cards{
-    margin-top: 20px;
-    margin-bottom: 20px;
+   margin: 20px;
+   margin-right: 25px;
 }
 .card{
     border-radius: 10px;
     box-shadow: 0 0 10px #96CF24;
-    margin:18px;
+    margin:20px;
     padding: auto;
+    width: 550px;
 }
 .card h3{
     text-align: center;
