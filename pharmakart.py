@@ -1,10 +1,16 @@
 import datetime
 from flask import Flask, render_template, url_for, flash, redirect
+from flask_sqlalchemy import SQLAlchemy
 from forms import LoginForm, RegistrationForm
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.config['SECRET_KEY'] = 'd24cea3cd7757ef7e80ca62e1c1a385e'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+db = SQLAlchemy(app)
+
+
+
 
 @app.route("/")
 @app.route("/home")
