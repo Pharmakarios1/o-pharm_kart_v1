@@ -18,6 +18,7 @@
     border: none;
     transition: all .2s linear;
 }
+/* Base layout page */
 header{
     width: 100vw;
     height: 12vh;
@@ -165,9 +166,9 @@ ul li a{
     top: 1.5rem;
     background: #eee;
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
+    height: 4rem;
+    width: 3rem;
+    line-height: 4rem;
     font-size: 2rem;
     color: var(--black);
 
@@ -227,6 +228,45 @@ ul li a{
     font-weight: bolder;
     margin-right: 1rem;
     font-size: 2.5rem;
+}
+
+/* Cart bag */
+.cart
+.fa-shopping-cart{
+    color: var(--text);
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cart p{
+    background-color: var(--text);
+    color: red;
+    font-size: 15px;
+    margin-left: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateY(-40px);
+}
+.cartItems {
+    width: 20vw;
+    height: 50vh;
+    background-color: var(--text);
+    border-radius: 10px;
+    transform: translateY(-90px);
+    box-shadow: 0 0 10px var(--text);
+    padding: 10px;
+
+
+}
+
+.heading{
+    color: var(--greener);
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 

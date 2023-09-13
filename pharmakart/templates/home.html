@@ -7,6 +7,7 @@
       <h1>Welcome to <span>Pharmakart</span></h1>
       <p>Your one stop store to health services</p>
     </div>
+
  
 </div>
 <div class="row container py-4 px-4">
@@ -22,16 +23,23 @@
     <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-primary" type="button">SUBMIT</button>
     </div>
-  </div>
+    <div class="cartItems">
+      <h2>Shopping Cart</h2>
+          <ul id="cart-items">
+              <!-- Cart items will be displayed here -->
+          </ul>
+          <p>Total: $<span id="cart-total">0.00</span></p>
 
+    </div>
+
+  </div>
 </div>
 </main> 
 
 <!--drugs section starts-->
 <section class="meds" id="meds">
  
-  <h1 class="heading">Popular brands</h1>
-  <h3 class="sub-heading">Medications</h3>
+  <h1 class="heading">Medications Shopping Pool</h1>
   
   <div class="box-container">
   
@@ -131,11 +139,7 @@
           <button onclick="addToCart('product6', 15.99)"><a href="#" class="btn">add to cart</a></button>
       </div>
       <div class="cart">
-          <h2>Shopping Cart</h2>
-          <ul id="cart-items">
-              <!-- Cart items will be displayed here -->
-          </ul>
-          <p>Total: $<span id="cart-total">0.00</span></p>
+          
       </div>
   
   </div>
