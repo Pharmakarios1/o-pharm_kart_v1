@@ -1,38 +1,73 @@
 {% extends "layout.html" %}
 {% block content %}
-
-<main class="background">
-  <div class="row container py-4 px-4">
-    <div class="col-md-6">
+<!-- greetings -->
+<main class="background row">
+  <div class="row container p-4">
+    <div class="col-md-4">
       <h1>Welcome to <span>Pharmakart</span></h1>
-      <p>Your one stop store to health services</p>
+      <h4>Your one stop store to health services</h4>
+      <p>We offer a wide range 
+        of services to our customers. We are always 
+        available to serve you.Pharmakart is a one 
+        stop store for all your health needs. We 
+        offer a wide range of products to our 
+        customers.We are always available to serve you.</p>
+      </p>
     </div>
+    <div class="col-md-7 order-menu">
+      
+    </div>
+    
+  <!-- Cart Box -->
+<div class="col-md-1 py-1 px-1">
+  </div>
 
- 
+<!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title" id="cartModalLabel">Your Cart</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cart-items">
+          <!-- Cart items will be displayed here -->
+      </ul>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer"><hr>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="clearCart()" class="btn btn-danger">Clear Cart</button>
+        <button type="button" onclick="checkout()"class="btn btn-success">Checkout</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="row container py-4 px-4">
-  <div class="col-md-4 order-menu">
-    <h2>ORDER MENU</h2>
+  
+</div>
+<div class="row">
+  <div class="col-md-3 order-menu p-4">
+    <h2>SERVICE MENU</h2>
     <select class="form-select" aria-label="Default select example">
       <option selected>Select Services</option>
       <option value="1">Consult A Pharmacist</option>
       <option value="2">Refill Medications</option>
       <option value="3">Way-bill Services</option>
     </select>
-
-    <div class="d-grid gap-2 col-6 mx-auto">
+      <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-primary" type="button">SUBMIT</button>
     </div>
-    <div class="cartItems">
-      <h2>Shopping Cart</h2>
-          <ul id="cart-items">
-              <!-- Cart items will be displayed here -->
-          </ul>
-          <p>Total: $<span id="cart-total">0.00</span></p>
-
-    </div>
-
   </div>
+  <div class="col-md-8">
+    
+  </div>
+  <div class="col-md-1">
+    
+</div>
 </div>
 </main> 
 

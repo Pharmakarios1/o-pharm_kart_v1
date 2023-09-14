@@ -37,8 +37,20 @@ header{
     margin-left: 30px;
 
 }
+
 .navbar-brand i{
     color: var(--text);
+}
+.fa-hospital span{
+    color: var(--text);
+    font-size: 30px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+h4{
+    color: var(--greener);
+    font-size: 30px;
+    margin-left: 10px;
 }
 .navbar-nav{
     margin-left: 10px;
@@ -110,13 +122,14 @@ ul li a{
     border-radius: 5px;
 }
 .container p{
-    font-family: monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #0b8200;
     font-size: 20px;
-    text-align: flex-start;
+    text-align: center;
 }
 
 .order-menu h2{
+
     color: var(--greener);
     font-weight: 700;
     text-align:center;
@@ -129,14 +142,26 @@ ul li a{
     font-weight: 400;
 }
 .form-select:hover{
-    color: #0b8200;
+    color: #fff;
 }
-
+.fa-cart-shopping{
+    color: var(--footer);
+    font-size: 30px;
+    margin-left: 130px;
+}
+.modal-header{
+    background-color: var(--text);
+    color: var(--black);
+    font-weight: bolder;
+    text-align:center;
+}
 .btn {
     color: #fff;
     background-color: #0b8200;
-    margin-top: 80px;
+    margin-top: 70px;
     padding: 5px;
+    border-radius: 5px;
+    width: max-content;
 }
 .btn:hover{
     background-color:#96CF24;
