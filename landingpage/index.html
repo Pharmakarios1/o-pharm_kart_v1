@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,44 +7,72 @@
     <title>Pharamakart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar bg navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Pkart-Rx</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="nav nav-menu me-auto mb-2 mb-lg-0">
+  <header id="nav-session">
+    <nav class="navbar bg navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('home') }}"><i class="fas fa-hospital"> <span>Pharmakart</span></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="nav nav-menu ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                        <a class="nav-link" href="#">Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-                    </li>
+            
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('register') }}">Register</a>
                     </li>
-                </ul>
+              
+            </ul>
+            <div class="cart ml-auto">
+                <i href="#" class="fas fa-shopping-cart cart"  data-bs-toggle="modal" data-bs-target="#cartModal"><p>0</p></i>
+            </div>
+        </div>
+        </div>           
+    </nav>
+    
+</header>
 
-                </div>
-            </div>           
-        </nav>
-    </header>
+    
    
     <section class="Large">
       <div class="row">
-        <img src="../static/img/landingpage.jpg" alt="">
+        <div class="col-md-4 intro">
+          <p>Pharmakart is a one 
+            stop store for all your health needs. 
+            We offer a wide range of products to our 
+            customers.We offer a wide range 
+            of services to our customers. We are always 
+            available to serve you.We are always 
+            available to serve you.</p>
+        </div>
+
+
       </div>
+     
     </section>
 
     
@@ -70,7 +99,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6">
-              <img src="../static/img/about-pharm.jpg" alt="" class="img-fluid">
+              <img src="../landingpage/static/img/about-pharm.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 speech">
               <p class="promo-title"><i class="fa fa-bolt" aria-hidden="true"></i>ABOUT US</p>

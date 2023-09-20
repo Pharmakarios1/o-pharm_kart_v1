@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Open+Sans&family=Raleway:ital,wght@0,100;0,500;0,700;0,800;1,200;1,900&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#0b8200;
+    --greener:#006838;
+    --box-shadow:0 .5rem 1.5rem #006838;
+    --text:#96CF24;
+    --footer: #d3d3d3;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+/* Base layout page */
+header{
+    width: 100vw;
+    height: 12vh;
+    background-color:var(--greener) ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+
+
+}
+/* Nav-bar custom */
+.navbar-brand {
+    font-size: 40px;
+    color: var(--text);
+    margin-left: 30px;
+
+}
+
+.navbar-brand i{
+    color: var(--text);
+}
+.fa-hospital span{
+    color: var(--text);
+    font-size: 30px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+h4{
+    color: var(--greener);
+    font-size: 30px;
+    margin-left: 10px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}  
+.navbar-toggler{
+    outline: none;
+}
+.bg ul li a{
+    margin-left: 10px;
+    color: #fff !important;
+    font-size: 22px;
+    font-weight: bold;
+    float: right;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
+  
+
+}
+.bg ul li a:hover{
+    color: var(--greener);
+    background-image: linear-gradient(to right, var(--text), var(--greener));
+}
+.bg ul li a::after{
+    color: var(--greener);
+}
+ul li a{
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--greener);
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 15px;
+    
+}
+.fa-bars{
+    color: var(--text)
+}
+.navbar-toggler{
+    outline: none;
+}
+.navbar-nav li a:hover{
+    color: var(--text);
+    background-image: linear-gradient(to right, var(--text), var(--greener));
+}
+.navbar-custom {
+    background-color: var(--footer);
+}
+
+.background {
+    height: 88vh;
+    background-image: url(../img/hero-pharm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Homepage */
+
+.container h1{
+    color: var(--greener);
+    font-weight: bolder;
+}
+.container span{
+    color: #fff;
+    background-image:linear-gradient(to right,#0b8200, #96cf24);
+    border-radius: 5px;
+}
+.container p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #0b8200;
+    font-size: 20px;
+    text-align: center;
+}
+
+.order-menu h2{
+
+    color: var(--greener);
+    font-weight: 700;
+    text-align:center;
+    text-shadow: var(--text);
+    
+}
+.form-select {
+    background-color: var(--greener);
+    color: #fff;
+    font-weight: 400;
+}
+.form-select:hover{
+    color: #fff;
+}
+.fa-cart-shopping{
+    color: var(--footer);
+    font-size: 30px;
+    margin-left: 130px;
+}
+.modal-header{
+    background-color: var(--text);
+    color: var(--black);
+    font-weight: bolder;
+    text-align:center;
+}
+.btn {
+    color: #fff;
+    background-color: #0b8200;
+    margin-top: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+}
+.btn:hover{
+    background-color:#96CF24;
+    border-color: #0b8200;
+}
+.meds .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.meds .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.meds .box-container .box .fa-heart,
+.meds .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 4rem;
+    width: 3rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--black);
+
+}
+.meds .box-container .box .fa-heart:hover,
+.meds .box-container .box .fa-eye:hover{
+    background: var(--green);
+    color: #fff;
+
+
+}
+
+.meds .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+.meds .box-container .box .fa-eye{
+    left: -15rem;
+}
+
+
+.meds .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+}
+
+.meds .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+
+.meds .box-container .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+
+.meds .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+
+}
+
+
+.meds .box-container .box .stars{
+    padding: 1rem 0;
+    
+}
+
+.meds .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+
+    
+}
+
+.meds .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+/* Cart bag */
+.cart
+.fa-shopping-cart{
+    color: var(--text);
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cart p{
+    background-color: var(--text);
+    color: red;
+    font-size: 15px;
+    margin-left: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateY(-40px);
+}
+.cartItems {
+    width: 20vw;
+    height: 50vh;
+    background-color: var(--text);
+    border-radius: 10px;
+    transform: translateY(-90px);
+    box-shadow: 0 0 10px var(--text);
+    padding: 10px;
+
+
+}
+
+.heading{
+    color: var(--greener);
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+/* About page */
+#banner{
+    padding: 10px;
+    margin: 0px;
+}
+
+.img-fluid{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 3px;
+}
+.speech {
+    width: 750px;
+    padding: 15px;
+    margin: 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--text);
+
+}
+.promo-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.promo-title .fa{
+    text-align: start;
+    margin-left: 60px;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #0b8200;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 2px;
+}
+.about-cards{
+   margin: 20px;
+   margin-right: 25px;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--text);
+    margin:20px;
+    padding: auto;
+    width: 550px;
+}
+.card h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card p{
+    justify-content: center;
+    text-align:center;
+    font-size: 15px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card .fa{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #0b8200;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 2px;
+}
+
+/* Contact page */
+.container-contact{
+    justify-content: center;
+}
+.center h3 {
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left:80px;
+    margin-top: 20px;
+
+}
+.row h3{
+    margin-top: 50px;
+    color: var(--greener);
+    text-align: start;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left:80px;
+    margin-top: 20px;
+}
+.MeetUs{
+    background-color:var(--text);
+    font-weight: bolder;
+    text-align: center;
+    width: 80vw;
+    height: 50px;
+    border-radius:12px ;
+    padding-top: 10px;
+    
+}
+.center .fa{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #0b8200;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 2px;   
+}
+.fa-solid{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 2px;
+    color: red;
+}
+.map{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+.map iframe{
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--text);
+
+}
+.admin {
+    margin: 100px 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-left: 4px solid var(--text);    
+}
+.admin h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.admin p{
+    justify-content: start;
+    text-align:start;
+    font-size: 15px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.admin img{
+    width:120px;
+    height: 120px;
+    border-radius: 15px;
+    margin: 10px;
+    margin-bottom: 3px;
+}
+.admin a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+/* Login page  and Register page*/
+.content-section{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+}
+.border-bottom{
+    border-bottom: 1px solid var(--text);
+    color: #0b8200;
+    font-weight: bolder;
+}
+.form-group{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
