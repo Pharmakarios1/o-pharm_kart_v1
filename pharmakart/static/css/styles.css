@@ -25,6 +25,7 @@ header{
     background-color:var(--greener) ;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 100;
     box-shadow: var(--box-shadow);
 
@@ -74,6 +75,10 @@ h4{
     color: var(--greener);
     background-image: linear-gradient(to right, var(--text), var(--greener));
 }
+.bg ul li a:active{
+    background-image: linear-gradient(to right, var(--text), var(--greener));
+}
+
 .bg ul li a::after{
     color: var(--greener);
 }
@@ -505,4 +510,7 @@ ul li a{
     margin-top: 0;
     margin-bottom: 1rem;
     justify-content: center;
+}
+.pharmacist{
+    margin: 20px;
 }

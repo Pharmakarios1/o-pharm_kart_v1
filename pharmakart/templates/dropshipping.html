@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="pharmacist">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Welcome, esteemed clients...</h3>
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                <option selected>Select a delivery services available</option>
+                <option value="1">e-Oblong Riders</option>
+                <option value="2">Uber-1</option>
+                <option value="3">Uber-2</option>
+                <option value="4">Uber3</option>
+                <option value="5">Bolt G</option>
+                <option value="6">Haltex Riders</option>
+                <option value="7">Aquiscensce</option>
+                <option value="8">Teledrift Medical delivery</option>
+                <option value="9">Quibock</option>
+              </select>
+              
+              <select class="form-select form-select-sm" aria-label="Small select example">
+                <option selected>Select a biller</option>
+                <option value="1">Auto-biller</option>
+                <option value="2">e-naira transaction</option>
+                <option value="3">Direct Ussd Transfer</option>
+              </select>
+              <a class="btn btn-primary" href="{{ url_for('payment') }}">Book Now!</a>
+              
+              </div>
+              <div class="col-md-5 map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31715.142461856667!2d3.264981527445325!3d6.471825977865275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b88c58ab93f09%3A0xba794b2a62413ee2!2sFestac%20Town%20102102%2C%20Lagos!5e0!3m2!1sen!2sng!4v1693815952843!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+       
+              
+    </div>
+       
+
+        
+        
+    
+    
+    
+    
+</section>
+<div class="col-md-6">
+    
+</div>
+
+
+
+
+  <div class="row">
+
+    <div class=" card col-sm-4">
+      <h3><i class="fa fa-motorcycle" aria-hidden="true"></i>Oblong Riders</h3>
+        <p>We at oblong derives pleasure in meeting the needs of our customers with swift and intact delivery services. contact us today. </p>
+    </div>
+    <div class=" card col-sm-4">
+        <h3><i class="fa fa-ambulance" aria-hidden="true"></i>Teledrift Medical delivery</h3>
+          <p>Teledrift knows the importance of safe storage especially when it comes to medications and comsumables. ensure to always use our services for effective delivery of your products</p>
+      </div>
+      <div class=" card col-sm-4">
+        <h3><i class="fa fa-car" aria-hidden="true"></i>Way-bill Services</h3>
+          <p>Ofcourse, everyone loves a hassle free shopping. Have your Medications and other items directly sent to your homes through our drop-shipping services.</p>
+      </div>
+    
+  </div>
+</section>
+{% endblock content %}

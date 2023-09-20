@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="pharmacist">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Andrews Doe">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Andrewsdoe@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Main Symptoms</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">Descriptions</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                <button class="btn btn-primary">Submit</button>
+              </div>
+
+              
+
+        
+        </div>
+        <div class="col-md-7">
+                <h3>Welcome, I am Pharmacist...</h3>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1 disabled" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              
+              </div>
+    </div>
+
+</section>
+
+
+
+  <div class="row">
+    <div class=" card col-sm-4">
+      <h3><i class="fa fa-stethoscope" aria-hidden="true"></i>Pharmacist's Consult</h3>
+      <p>Got a question for the Pharmacist regarding your health or Medication use? consulting a pharmacist is easier with Pharmakart.</p>
+    </div>
+    <div class=" card col-sm-4">
+      <h3><i class="fa fa-heartbeat" aria-hidden="true"></i>Refill Medication's</h3>
+      <p>Refill Medications on the go for your continuing therapy.</p>
+    </div>
+    <div class=" card col-sm-4">
+      <h3><i class="fa fa-ambulance" aria-hidden="true"></i>Way-bill Services</h3>
+        <p>Ofcourse, everyone loves a hassle free shopping. Have your Medications and other items directly sent to your homes through our drop-shipping services.</p>
+    </div>
+    
+  </div>
+</section>
+{% endblock content %}

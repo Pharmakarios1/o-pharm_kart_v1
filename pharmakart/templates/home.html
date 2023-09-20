@@ -40,8 +40,9 @@
       <!-- Modal Footer -->
       <div class="modal-footer"><hr>
         <p>Total: $<span id="cart-total">0.00</span></p>
-        <button onclick="clearCart()" class="btn btn-danger">Clear Cart</button>
-        <button type="button" onclick="checkout()"class="btn btn-success">Checkout</button>
+        <!-- <button onclick="clearCart()" class="btn btn-danger">Clear Cart</button> -->
+        <a class="btn btn-primary" href="{{ url_for('payment') }}">Checkout</a>
+        <!-- <button type="button" onclick="checkout()"class="btn btn-success">Checkout</button> -->
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
@@ -52,15 +53,20 @@
 <div class="row">
   <div class="col-md-3 order-menu p-4">
     <h2>SERVICE MENU</h2>
-    <select class="form-select" aria-label="Default select example">
+    <div class="btn-group" role="group" aria-label="Basic example">
+  <a class="btn btn-primary" href="{{ url_for('pharmacist') }}">Pharmacist</a>
+  <button type="button" class="btn btn-primary">Refill Medications</button>
+  <a class="btn btn-primary" href="{{ url_for('dropshipping') }}">Drop-shipping</a>
+</div>
+    <!-- <select class="form-select" aria-label="Default select example">
       <option selected>Select Services</option>
-      <option value="1">Consult A Pharmacist</option>
-      <option value="2">Refill Medications</option>
+      <option value="1"><a class="nav-link" href="{{ url_for('pharmacist') }}"></a>Consult A Pharmacist</option>
+      <option value="2" id="medicationSelect">Refill Medications</option>
       <option value="3">Way-bill Services</option>
     </select>
       <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">SUBMIT</button>
-    </div>
+      <button class="btn btn-primary" type="button" id="submitButton">SUBMIT</button>
+    </div> -->
   </div>
   <div class="col-md-8">
     

@@ -26,6 +26,18 @@ def services():
 def contact():
     return render_template("contact.html")
 
+@app.route("/pharmacist/")
+def pharmacist():
+    return render_template("pharmacist.html")
+
+@app.route("/dropshipping/")
+def dropshipping():
+    return render_template("dropshipping.html")
+
+@app.route("/payment/")
+def payment():
+    return render_template("payment.html")
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:

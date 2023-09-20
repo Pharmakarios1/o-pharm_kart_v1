@@ -37,3 +37,19 @@
 var myModal = new bootstrap.Modal(document.getElementById('myModal'));
 myModal.show();
 
+
+
+ // Get references to the select element and submit button
+ const medicationSelect = document.getElementById("medicationSelect");
+ const submitButton = document.getElementById("submitButton");
+
+ submitButton.addEventListener("click", () => {
+   if (medicationSelect.value === "2") {
+     document.getElementById("meds").scrollIntoView({ behavior: "smooth" });
+   }
+ });
+
+
+
+
+
