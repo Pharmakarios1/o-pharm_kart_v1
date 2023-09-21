@@ -19,7 +19,3 @@ login_manager.login_view = 'login'
 login_manager.login_message_category = 'info'
 
 from pharmakart import routes
-
-
-if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')

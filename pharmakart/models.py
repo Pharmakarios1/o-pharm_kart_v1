@@ -1,5 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy
-from pharmakart import db, login_manager
+from pharmakart import db, login_manager, app
 from flask_login import UserMixin
 from datetime import datetime as dt
 
@@ -55,19 +54,18 @@ class Services(db.Model, UserMixin):
     def __repr__(self):
         '''Representation of the Services class when an instance is called'''
         return f'Services("{self.s_id}", "{self.name}", "{self.cost}")'
-    
 
 
 class Transactions(db.Model, UserMixin):
     """This class creates the Transactions database using Python's
     Flask SQLAlchemy ORM using the db.model module"""
     tran_id = db.Column(db.Integer, primary_key=True, nullable=False)
-    tran_p_owner = db.Column(db.Integer, db.ForeignKey('user.u_id'),
+    tran_p_owner = db.Column(db.Integer, db.ForeignKey('users.id'),
                              nullable=False)
     tran_service = db.Column(db.Integer, db.ForeignKey('services.s_id'),
                              nullable=False)
-    tran_on_pet = db.Column(db.Integer, db.ForeignKey('pet.p_id'),
-                            nullable=False)
+    # tran_on_pet = db.Column(db.Integer, db.ForeignKey('pet.p_id'),
+    #                         nullable=False)
     tran_date = db.Column(db.DateTime, nullable=False, default=dt.utcnow)
     tran_status = db.Column(db.Integer, nullable=False, default=0)
 
@@ -75,4 +73,7 @@ class Transactions(db.Model, UserMixin):
         '''Representation of the Transaction class when an instance is
         called'''
         return f'Transaction("{self.tran_id}", "{self.tran_status}","{self.tran_date}")'
-    
+
+
+with app.app_context():
+    db.create_all()
